@@ -1,0 +1,262 @@
+{
+  "painting-services": {
+    "id": "painting-services",
+    "title": "Painting Services",
+    "shortDescription": "Professional interior and exterior painting services for Darwin homes and businesses",
+    "longDescription": "Our professional painting services transform your spaces with precision and care. We use premium quality paints and finishes designed specifically for Darwin's tropical climate. Whether you need interior refresh or complete exterior restoration, our team delivers exceptional results that last.",
+    "icon": "Paintbrush",
+    "image": "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "gallery": [
+      "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "features": [
+      "Premium quality paints and finishes",
+      "Color consultation and matching",
+      "Weather-resistant exterior painting",
+      "Detailed surface preparation",
+      "Clean, professional application",
+      "Warranty on all work"
+    ],
+    "process": [
+      {
+        "step": 1,
+        "title": "Free Consultation",
+        "description": "We'll visit your property to assess your painting needs and provide expert recommendations"
+      },
+      {
+        "step": 2,
+        "title": "Color Selection",
+        "description": "Choose from our extensive color palette with professional guidance"
+      },
+      {
+        "step": 3,
+        "title": "Surface Preparation",
+        "description": "Thorough cleaning, sanding, and priming for optimal paint adhesion"
+      },
+      {
+        "step": 4,
+        "title": "Professional Application",
+        "description": "Expert application using premium tools and techniques"
+      },
+      {
+        "step": 5,
+        "title": "Final Inspection",
+        "description": "Complete walkthrough to ensure your complete satisfaction"
+      }
+    ],
+    "startingPrice": "From $35/sqm",
+    "typicalDuration": "1-3 days depending on project size",
+    "warranty": "5-year warranty on all painting work",
+    "faq": [
+      {
+        "question": "What type of paint do you use?",
+        "answer": "We use premium quality paints specifically formulated for Darwin's tropical climate, including UV-resistant and moisture-resistant options."
+      },
+      {
+        "question": "Do you provide color consultation?",
+        "answer": "Yes, our experts provide free color consultation to help you choose the perfect colors for your space."
+      },
+      {
+        "question": "How long does a typical painting project take?",
+        "answer": "Most interior rooms take 1-2 days, while exterior projects typically take 2-3 days depending on weather conditions and project size."
+      }
+    ]
+  },
+  "home-renovations": {
+    "id": "home-renovations",
+    "title": "Home Renovations",
+    "shortDescription": "Complete home renovation services from kitchen to bathroom makeovers",
+    "longDescription": "Transform your entire home with our comprehensive renovation services. From kitchen and bathroom makeovers to complete home transformations, we handle every aspect of your renovation project. Our experienced team coordinates all trades to deliver stunning results that enhance your lifestyle and property value.",
+    "icon": "Home",
+    "image": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "gallery": [
+      "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "features": [
+      "Custom design consultation",
+      "Kitchen and bathroom renovations",
+      "Quality cabinet installation",
+      "Benchtop and splashback work",
+      "Plumbing and electrical coordination",
+      "Project management included"
+    ],
+    "process": [
+      {
+        "step": 1,
+        "title": "Initial Consultation",
+        "description": "Discuss your vision, budget, and timeline with our renovation specialists"
+      },
+      {
+        "step": 2,
+        "title": "Design & Planning",
+        "description": "Create detailed plans and 3D renderings of your new space"
+      },
+      {
+        "step": 3,
+        "title": "Permits & Approvals",
+        "description": "Handle all necessary permits and council approvals"
+      },
+      {
+        "step": 4,
+        "title": "Construction",
+        "description": "Professional construction with daily progress updates"
+      },
+      {
+        "step": 5,
+        "title": "Final Handover",
+        "description": "Complete inspection and handover of your beautifully renovated home"
+      }
+    ],
+    "startingPrice": "From $12,000",
+    "typicalDuration": "2-8 weeks depending on scope",
+    "warranty": "2-year warranty on all renovation work",
+    "faq": [
+      {
+        "question": "Do you handle all permits and approvals?",
+        "answer": "Yes, we handle all necessary permits and council approvals as part of our comprehensive service."
+      },
+      {
+        "question": "Can I live in my home during renovations?",
+        "answer": "In most cases, yes. We work to minimize disruption and can stage the renovation to allow continued occupancy."
+      },
+      {
+        "question": "Do you provide 3D design visualizations?",
+        "answer": "Yes, we provide detailed 3D renderings so you can see exactly how your renovated space will look before construction begins."
+      }
+    ]
+  },
+  "electrical-services": {
+    "id": "electrical-services",
+    "title": "Electrical Services",
+    "shortDescription": "Licensed electrical work for homes and small businesses",
+    "longDescription": "Our licensed electricians provide comprehensive electrical services for homes and small businesses across Darwin. From new installations and upgrades to safety inspections and emergency repairs, we ensure all work meets the highest safety standards and complies with current regulations.",
+    "icon": "Zap",
+    "image": "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "gallery": [
+      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "features": [
+      "New installations and upgrades",
+      "Safety switch installation",
+      "LED lighting solutions",
+      "Power point installation",
+      "Electrical fault finding",
+      "Compliance certificates provided"
+    ],
+    "process": [
+      {
+        "step": 1,
+        "title": "Safety Assessment",
+        "description": "Comprehensive safety inspection of your electrical system"
+      },
+      {
+        "step": 2,
+        "title": "Quote & Planning",
+        "description": "Detailed quote and project planning with transparent pricing"
+      },
+      {
+        "step": 3,
+        "title": "Professional Installation",
+        "description": "Licensed electricians perform all work to Australian standards"
+      },
+      {
+        "step": 4,
+        "title": "Testing & Certification",
+        "description": "Complete testing and provision of compliance certificates"
+      },
+      {
+        "step": 5,
+        "title": "Safety Briefing",
+        "description": "Explanation of your new electrical system and safety features"
+      }
+    ],
+    "startingPrice": "From $150/hour",
+    "typicalDuration": "1-4 hours for most services",
+    "warranty": "1-year warranty on all electrical work",
+    "faq": [
+      {
+        "question": "Are your electricians licensed?",
+        "answer": "Yes, all our electricians are fully licensed and insured, with regular training to stay current with regulations."
+      },
+      {
+        "question": "Do you provide compliance certificates?",
+        "answer": "Yes, we provide compliance certificates for all electrical work as required by law."
+      },
+      {
+        "question": "Do you offer emergency electrical services?",
+        "answer": "Yes, we provide 24/7 emergency electrical services for urgent situations."
+      }
+    ]
+  },
+  "air-conditioning": {
+    "id": "air-conditioning",
+    "title": "Air Conditioning",
+    "shortDescription": "Stay cool in Darwin's heat with professional AC services",
+    "longDescription": "Beat Darwin's tropical heat with our professional air conditioning services. We specialize in installation, maintenance, and repair of split systems and ducted air conditioning. Our energy-efficient solutions are specifically chosen for Darwin's climate, ensuring optimal cooling while keeping running costs low.",
+    "icon": "Wind",
+    "image": "https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "gallery": [
+      "https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "features": [
+      "Split system installation",
+      "Ducted system maintenance",
+      "Energy-efficient solutions",
+      "Regular service and cleaning",
+      "Emergency repair service",
+      "Warranty on installations"
+    ],
+    "process": [
+      {
+        "step": 1,
+        "title": "Climate Assessment",
+        "description": "Evaluate your space and cooling requirements for optimal system selection"
+      },
+      {
+        "step": 2,
+        "title": "System Selection",
+        "description": "Choose from our range of energy-efficient air conditioning systems"
+      },
+      {
+        "step": 3,
+        "title": "Professional Installation",
+        "description": "Expert installation by certified technicians with minimal disruption"
+      },
+      {
+        "step": 4,
+        "title": "Testing & Commissioning",
+        "description": "Complete system testing and optimization for peak performance"
+      },
+      {
+        "step": 5,
+        "title": "Maintenance Plan",
+        "description": "Set up regular maintenance schedule to ensure long-term efficiency"
+      }
+    ],
+    "startingPrice": "From $800",
+    "typicalDuration": "4-8 hours for installation",
+    "warranty": "5-year warranty on installations",
+    "faq": [
+      {
+        "question": "What brands do you install?",
+        "answer": "We install leading brands including Daikin, Mitsubishi, Fujitsu, and Panasonic, chosen for reliability and efficiency in Darwin's climate."
+      },
+      {
+        "question": "How often should I service my AC?",
+        "answer": "We recommend servicing every 6 months in Darwin's climate to maintain optimal performance and efficiency."
+      },
+      {
+        "question": "Do you provide emergency repairs?",
+        "answer": "Yes, we offer 24/7 emergency repair services to keep you cool when you need it most."
+      }
+    ]
+  }
+}
