@@ -93,18 +93,18 @@ const Services = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-secondary-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-900 to-secondary-900 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                 Our Services
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed px-2 sm:px-0">
                 Comprehensive home improvement services across Darwin and surrounding suburbs. Quality workmanship with reliable, professional service for all your renovation needs.
               </p>
             </motion.div>
@@ -134,9 +134,9 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {services.map((service, index) => (
               <motion.div
                 key={service.id}
@@ -148,38 +148,38 @@ const Services = () => {
               >
                 <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
                   {/* Service Image */}
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-48 sm:h-64 overflow-hidden">
                     <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-                          <service.icon size={24} className="text-white" />
+                    <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4">
+                      <div className="flex items-center space-x-2 sm:space-x-3">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-600 rounded-full flex items-center justify-center">
+                          <service.icon size={20} className="text-white sm:w-6 sm:h-6" />
                         </div>
                         <div>
-                          <h3 className="text-2xl font-bold text-white">{service.title}</h3>
-                          <p className="text-primary-200 font-medium">{service.startingPrice}</p>
+                          <h3 className="text-lg sm:text-2xl font-bold text-white">{service.title}</h3>
+                          <p className="text-primary-200 font-medium text-sm sm:text-base">{service.startingPrice}</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Service Content */}
-                  <div className="p-8">
-                    <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                  <div className="p-4 sm:p-6 lg:p-8">
+                    <p className="text-gray-600 text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
                       {service.description}
                     </p>
 
                     {/* Features List */}
-                    <ul className="space-y-3 mb-8">
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center space-x-3">
-                          <CheckCircle size={20} className="text-green-600 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
+                        <li key={featureIndex} className="flex items-center space-x-2 sm:space-x-3">
+                          <CheckCircle size={18} className="text-green-600 flex-shrink-0 sm:w-5 sm:h-5" />
+                          <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -188,11 +188,11 @@ const Services = () => {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="w-full bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center group"
+                      className="w-full bg-primary-600 text-white py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center group text-sm sm:text-base min-h-[48px]"
                       onClick={() => navigate(`/services/${service.slug}`)}
                     >
                       Learn More About {service.title}
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </motion.button>
                   </div>
                 </div>

@@ -98,18 +98,18 @@ const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-secondary-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-900 to-secondary-900 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                 About DD Painting & Renovation Darwin
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed px-2 sm:px-0">
                 With over 20 years of experience, DD Painting and Renovation has become a trusted name for painting and renovation in Darwin. We're known for delivering reliable, top-quality services tailored to both homes and commercial properties.
               </p>
             </motion.div>
@@ -117,19 +117,19 @@ const About = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative mt-8 lg:mt-0"
             >
               <img
                 src="https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="DD Painting team at work"
-                className="rounded-2xl shadow-2xl"
+                className="rounded-2xl shadow-2xl w-full"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary-600 text-white p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 bg-primary-600 text-white p-3 sm:p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-2">
-                  <Award size={32} />
+                  <Award size={24} className="sm:w-8 sm:h-8" />
                   <div>
-                    <p className="font-bold text-lg">Award Winning</p>
-                    <p className="text-primary-200">Darwin's Choice 2021-2025</p>
+                    <p className="font-bold text-sm sm:text-lg">Award Winning</p>
+                    <p className="text-primary-200 text-xs sm:text-base">Darwin's Choice 2021-2025</p>
                   </div>
                 </div>
               </div>
@@ -139,15 +139,15 @@ const About = () => {
       </section>
 
       {/* Video Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 sm:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">
               About DD Painting and Renovation Services Darwin
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">

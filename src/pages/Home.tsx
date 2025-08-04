@@ -79,23 +79,23 @@ const Home = () => {
           }}
         ></div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight"
             >
               Top-Rated Painting & Renovation Experts in{' '}
-              <span className="text-primary-400">Darwin</span>
+              <span className="text-primary-400 block sm:inline">Darwin</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0"
             >
               Transform your home with our award-winning painting, renovation, electrical, and air conditioning services. Serving Darwin and surrounding suburbs with excellence since day one.
             </motion.p>
@@ -104,18 +104,18 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-2 sm:px-0"
             >
               <a
                 href="#quote"
-                className="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center group"
+                className="bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center group min-h-[48px]"
               >
                 Get a Free Quote
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <Link
                 to="/projects"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 inline-flex items-center justify-center"
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 inline-flex items-center justify-center min-h-[48px]"
               >
                 View Our Work
               </Link>
@@ -138,22 +138,22 @@ const Home = () => {
 
       {/* Services Overview */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">
               Our Services at a Glance
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2 sm:px-0">
               From painting to full renovations, electrical work to air conditioning - we're your one-stop solution for all home improvement needs in Darwin.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -162,13 +162,13 @@ const Home = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center group border border-gray-100"
+                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 sm:p-8 text-center group border border-gray-100"
               >
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:scale-110 transition-transform ${service.color}`}>
-                  <service.icon size={32} />
+                <div className={`inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-100 mb-4 sm:mb-6 group-hover:scale-110 transition-transform ${service.color}`}>
+                  <service.icon size={28} className="sm:w-8 sm:h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">{service.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{service.description}</p>
               </motion.div>
             ))}
           </div>

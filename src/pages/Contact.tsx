@@ -38,44 +38,43 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-secondary-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <motion.h1
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-primary-900 to-primary-800 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            transition={{ duration: 0.8 }}
+            className="text-center max-w-4xl mx-auto"
           >
-            Get In Touch
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto"
-          >
-            Ready to transform your home? Contact DD Painting today for your free consultation and quote.
-          </motion.p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+              Contact Us
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed px-2 sm:px-0">
+              Ready to transform your space? Get in touch with DD Painting & Renovation for a free quote and consultation.
+            </p>
+          </motion.div>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">
               Contact Information
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2 sm:px-0">
               Multiple ways to reach us. Choose what works best for you.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.title}
@@ -85,21 +84,21 @@ const Contact = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center group"
               >
-                <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-              <info.icon size={32} className="text-primary-600 group-hover:text-white" />
+                <div className="bg-primary-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+              <info.icon size={28} className="text-primary-600 group-hover:text-white sm:w-8 sm:h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{info.title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{info.title}</h3>
                 {info.link ? (
                   <a
                     href={info.link}
-                    className="text-lg font-semibold text-primary-600 hover:text-primary-700 transition-colors block mb-2"
+                    className="text-base sm:text-lg font-semibold text-primary-600 hover:text-primary-700 transition-colors block mb-2"
                   >
                     {info.details}
                   </a>
                 ) : (
-                  <p className="text-lg font-semibold text-gray-800 mb-2">{info.details}</p>
+                  <p className="text-base sm:text-lg font-semibold text-gray-800 mb-2">{info.details}</p>
                 )}
-                <p className="text-gray-600">{info.description}</p>
+                <p className="text-gray-600 text-sm sm:text-base">{info.description}</p>
               </motion.div>
             ))}
           </div>
@@ -107,18 +106,18 @@ const Contact = () => {
       </section>
 
       {/* Quote Form Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 sm:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6">
               Request Your Free Quote
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2 sm:px-0">
               Tell us about your project and we'll provide a detailed, no-obligation quote within 24 hours.
             </p>
           </motion.div>
